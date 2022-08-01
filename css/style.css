@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Space+Mono:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgb(0 0 0 / 75%),rgb(0 0 0 / 79%)), url(img/car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 105%;
+    height: 130vh;
+}
+.nav-bar{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    box-shadow: inset 6px 0px 14px 0px #df09a9;
+    padding: 10px 7%;
+}
+.nav-bar:hover{
+    background: #000;
+}
+.nav-bar .logo h1{
+    color: darkgreen;
+    font-family: 'Oleo Script Swash Caps', cursive; 
+}
+.nav-bar .logo span{
+    color: darkorange;
+    font-family: bold;
+}
+.menu-items{
+    list-style: none
+}
+.menu-items li{
+    display: inline-block;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu-items li a{
+    text-decoration: none;
+    color: darkorange;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu-items li a:hover{
+    border-bottom: 2px solid orangered;
+    color: orangered;
+}
+/*------------- reusable style here ----------------*/
+
+.btn-full,
+
+.btn-ghost{
+    text-decoration: none;
+    color: white;
+    background-color: darkorange;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    outline: none;
+    font-size: 22px;
+    transition: 0.3s ease-in;
+}
+
+.btn-full:hover,
+.btn-full:active,
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: pink;
+    color: blue;
+    border-radius: 8px;
+    padding: auto 15px;
+    transform: skew(1.1);
+}
+
+/*----- ---- home- section styling -----------------*/
+
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    gap: 5rem;
+    padding: 0 5%;
+}
+
+.home-container .content-box{
+    flex: 1 1 40rem;
+    flex-wrap: wrap;
+
+}
+.home-container .image-box{
+    flex: 1 1 40rem;
+    flex-wrap: wrap;
+    color: #fff;
+
+}
+
+.content-box h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Oleo Script Swash Caps', cursive; 
+}
+.content-box q{
+    color: aqua;
+    font-size: 1.7rem;
+
+}
+.content-box h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+.auto-input{
+    color: orangered;
+}
+
+.image-box img{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+ 
+}
+
+.content-box p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+.social-media{
+    margin-top: 3rem;
+
+}
+.social-media a{
+    font-size: 2.5rem;
+    color: darkorange;
+    padding: 10px;
+    transition: 1s ease;
+}
+.social-media a:hover{
+    color: mediumvioletred;
+}
+
+.image-box:hover .frontside-image{
+    left: 50%;
+    transform: scale(.9);
+}
+
+.service-section .service-para{
+    background: #fff;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.service-section h2{
+    color: orangered;
+    text-align: center;
+}
+.service-section {
+    text-align: center;
+}
+.service-box{
+    flex: 1 1 20rem;
+    background: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    border: 1px solid orange;
+    cursor: pointer;
+    box-shadow: inset 6px 0px 14px 7px #df09a9;
+    transition: 1s ease;
+    position: relative;
+}
+.service-box:hover {
+    transform: skewX(10deg)scale(1.05);
+    box-shadow: inset 6px 0px 14px 7px darkgreen;
+    
+}
+.service-box i{
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    width: 50px;
+    height: 50px;
+}
+.service-box i:hover{
+    background: none;
+    color: magenta;
+}
+.service-box .fa-solid {
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+} 
+.service-box a{
+   position: absolute;
+   bottom: -15px;
+   right: 20px;
+   font-size: 1.2rem;
+}
+.service-box a i{
+    width: 30px;
+    height: 30px;  
+ }
+ .service-box .fa-arrow-right{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 30px;
+ }
+ .service-box .fa-arrow-right:hover{
+    color: blue;
+  
+ }
+ .service-box h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+ }
+
+ .about-myskill{
+     text-align: center;
+     margin: 0 auto;
+     padding-top: 60px;
+     padding-bottom: 20px;
+ }
+ .about-myskill span{
+     color: darkoranges;
+ }
+ .about-myskill h3{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
